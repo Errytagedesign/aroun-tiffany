@@ -27,6 +27,7 @@
 body {
   margin: 0;
   padding: 0;
+  color: var(--white);
 }
 
 /* ====General fonts styles=== */
@@ -34,24 +35,24 @@ body {
 h2 {
   font-size: var(--fontSuperBig);
   font-weight: 700;
-  color: var(--black);
+  /* color: var(--sec-color); */
 }
 h3 {
   font-size: var(--fontBig);
   font-weight: 500;
-  color: var(--black);
+  /* color: var(--black); */
 }
 
 h4 {
   font-size: var(--fontMed);
   font-weight: 500;
-  color: var(--black);
+  /* color: var(--black); */
 }
 
 p {
   font-size: var(--fontSmall);
   font-weight: 400;
-  color: var(--black);
+  /* color: var(--black); */
 }
 
 a {

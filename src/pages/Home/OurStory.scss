@@ -1,0 +1,88 @@
+.our-story {
+  .hero {
+    height: 100vh;
+    overflow: hidden;
+
+    // margin: 0 auto;
+    background: var(--main-color) url("../../assets/aroun-tiffany10.jpeg")
+      center center no-repeat;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2em 2em;
+  }
+
+  h2 {
+    font-size: 7rem;
+    line-height: 90px;
+    letter-spacing: 10px;
+    color: var(--sec-color);
+  }
+
+  h3 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    &::before {
+      content: " ";
+      display: flex;
+      height: 2px;
+      width: 40%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      border: solid 1px white;
+    }
+    &::after {
+      content: " ";
+      display: flex;
+      height: 2px;
+      width: 40%;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      border: solid 1px white;
+    }
+    @media screen and (max-width: 900px) {
+      &::before {
+        width: 30%;
+      }
+      &::after {
+        width: 30%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      &::before {
+        width: 15%;
+      }
+      &::after {
+        width: 15%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    h2 {
+      font-size: 5rem;
+      line-height: 70px;
+    }
+  }
+
+  .story-time {
+    // background: var(--medGrey) url("../../assets/aroun-tiffany8.jpeg") center
+    //   center no-repeat;
+    background-blend-mode: color;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3em;
+    h2 {
+      color: var(--sec-color);
+    }
+
+    p {
+      color: var(--black);
+      font-size: var(--fontBig);
+    }
+  }
+}
