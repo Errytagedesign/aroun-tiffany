@@ -22,9 +22,9 @@ function Navbar() {
     <main className="navbar">
       <nav className="container content">
         <section className="d-flex col-8 col-lg-3 align-items-start">
-          <Link to="/" className="col-3 col-md-4">
+          <Link to="/" className="col-3 ">
             <img
-              className="col-12"
+              className="col-6"
               src={BrandLogo}
               alt="Aroun and Tiffany logo"
             />
