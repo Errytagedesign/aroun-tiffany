@@ -1,8 +1,9 @@
 .our-story {
   height: 100%;
+  width: 100%;
   .hero {
     height: 100vh;
-    // overflow: hidden;
+    overflow: hidden;
 
     // margin: 0 auto;
     background: var(--main-color) url("../../assets/aroun-tiffany10.jpeg")
@@ -11,64 +12,63 @@
     background-size: cover;
     background-attachment: fixed;
     padding: 2em 2em;
-  }
-
-  h2 {
-    font-size: 7rem;
-    line-height: 90px;
-    letter-spacing: 10px;
-    color: var(--sec-color);
-  }
-
-  h3 {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    color: var(--white);
-
-    &::before {
-      content: " ";
-      display: flex;
-      height: 2px;
-      width: 40%;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      border: solid 1px white;
-    }
-    &::after {
-      content: " ";
-      display: flex;
-      height: 2px;
-      width: 40%;
-      position: absolute;
-      top: 50%;
-      right: 0;
-      border: solid 1px white;
-    }
-    @media screen and (max-width: 900px) {
-      &::before {
-        width: 30%;
-      }
-      &::after {
-        width: 30%;
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      &::before {
-        width: 15%;
-      }
-      &::after {
-        width: 15%;
-      }
-    }
-  }
-
-  @media screen and (max-width: 500px) {
     h2 {
-      font-size: 5rem;
-      line-height: 70px;
+      font-size: 7rem;
+      line-height: 90px;
+      letter-spacing: 10px;
+      color: var(--sec-color);
+    }
+
+    h3 {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      color: var(--white);
+
+      &::before {
+        content: " ";
+        display: flex;
+        height: 2px;
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        border: solid 1px white;
+      }
+      &::after {
+        content: " ";
+        display: flex;
+        height: 2px;
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        border: solid 1px white;
+      }
+      @media screen and (max-width: 900px) {
+        &::before {
+          width: 30%;
+        }
+        &::after {
+          width: 30%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        &::before {
+          width: 15%;
+        }
+        &::after {
+          width: 15%;
+        }
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      h2 {
+        font-size: 5rem;
+        line-height: 70px;
+      }
     }
   }
 
@@ -78,16 +78,27 @@
     background-blend-mode: color;
     background-size: cover;
     background-attachment: fixed;
-    padding: 3em;
-    @media screen and (max-width: 900px) {
-      padding: 1em;
+    background-color: var(--main-color);
+
+    .story {
+      background-color: var(--white);
     }
+
+    .storyInfo,
+    .story {
+      padding: 2em 2.2em;
+      @media screen and (max-width: 900px) {
+        padding: 1em;
+      }
+    }
+
     h2 {
-      color: var(--sec-color);
+      color: var(--main-color);
+      font-size: 4rem;
     }
 
     p {
-      color: var(--black);
+      color: var(--sec-color);
       font-size: var(--fontBig);
     }
   }
@@ -100,6 +111,25 @@
     }
     @media screen and (max-width: 900px) {
       padding: 1em;
+    }
+  }
+
+  .best {
+    padding: 5em 0em;
+
+    background: var(--sec-color) url("../../assets/aroun-tiffany6.jpeg") top
+      center no-repeat;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-attachment: fixed;
+    // color: var(--white);
+    // div {
+    //   // margin: 2em auto;
+    //   height: 300px;
+    // }
+    h2 {
+      color: var(--white);
+      font-size: 4rem;
     }
   }
 }
