@@ -15,7 +15,7 @@ function App() {
     const timeId = setTimeout(() => {
       // if loading is true, set it to false
       setLoading(false);
-    }, 2000);
+    }, 3000);
     return () => {
       // clear timeout here
       clearTimeout(timeId);
