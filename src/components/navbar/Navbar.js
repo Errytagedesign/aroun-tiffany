@@ -41,16 +41,16 @@ function Navbar() {
 
           {/* Nav Items */}
           <section className="d-flex nav-items flex-column flex-lg-row justify-content-between col-12  p-2 ">
-            <Link to="#">
+            <Link onClick={ShowNavbar} to="/">
               <h3 className="navItems ">Our Story</h3>
             </Link>
-            <Link to="#">
+            <Link onClick={ShowNavbar} to="/venue">
               <h3 className="navItems ">When and Where</h3>
             </Link>
-            <Link to="#">
+            <Link onClick={ShowNavbar} to="/registry">
               <h3 className="navItems ">Registry </h3>
             </Link>
-            <Link to="#">
+            <Link onClick={ShowNavbar} to="/rsvp">
               <h3 className="navItems ">RSVP </h3>
             </Link>
           </section>

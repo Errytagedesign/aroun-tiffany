@@ -5,6 +5,9 @@ import Navbar from "./components/navbar/Navbar";
 import "aos/dist/aos.css";
 import OurStory from "./pages/Home/OurStory";
 import Spinner from "./components/spinner/Spinner";
+import Venue from "./pages/Venue/Venue";
+import Registry from "./pages/Registry/Registry";
+import Rsvp from "./pages/RSVP/Rsvp";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -30,6 +33,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<OurStory />} />
+          <Route path="/venue" element={<Venue />} />
+          <Route path="/registry" element={<Registry />} />
+          <Route path="/rsvp" element={<Rsvp />} />
         </Routes>
         <Footer />
       </Router>

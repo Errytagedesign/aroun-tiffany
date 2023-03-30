@@ -1,7 +1,7 @@
 .our-story {
   height: 100%;
   .hero {
-    // height: 100vh;
+    height: 100vh;
     // overflow: hidden;
 
     // margin: 0 auto;
@@ -24,6 +24,8 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
+    color: var(--white);
+
     &::before {
       content: " ";
       display: flex;
@@ -77,6 +79,9 @@
     background-size: cover;
     background-attachment: fixed;
     padding: 3em;
+    @media screen and (max-width: 900px) {
+      padding: 1em;
+    }
     h2 {
       color: var(--sec-color);
     }
@@ -84,6 +89,17 @@
     p {
       color: var(--black);
       font-size: var(--fontBig);
+    }
+  }
+
+  .gallery {
+    padding: 5em;
+
+    .react-photo-album--photo {
+      object-fit: contain;
+    }
+    @media screen and (max-width: 900px) {
+      padding: 1em;
     }
   }
 }

@@ -1,6 +1,9 @@
 import React from "react";
 import "./OurStory.scss";
+
 import logo from "../../assets/aroun-tiffany-logo.png";
+import Gallery from "../../components/Gallery/Gallery";
+
 function OurStory() {
   return (
     <main data-aos="zoom-out" className="our-story ">
@@ -59,6 +62,8 @@ function OurStory() {
           Aroun.
         </p>
       </section>
+
+      <Gallery />
     </main>
   );
 }
