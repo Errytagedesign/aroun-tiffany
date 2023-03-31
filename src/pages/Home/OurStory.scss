@@ -1,6 +1,4 @@
 .our-story {
-  height: 100%;
-  width: 100%;
   .hero {
     height: 100vh;
     overflow: hidden;
@@ -123,11 +121,15 @@
 
   .best {
     padding: 5em 0em;
+    position: relative;
 
     background: var(--sec-color) url("../../assets/aroun-tiffany6.jpeg") top
       center no-repeat;
     background-blend-mode: soft-light;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-attachment: fixed;
     // color: var(--white);
     // div {
@@ -135,7 +137,7 @@
     //   height: 300px;
     // }
     h2 {
-      color: var(--white);
+      color: var(--main-color);
       font-size: 4rem;
     }
   }

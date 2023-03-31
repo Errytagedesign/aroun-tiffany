@@ -1,0 +1,27 @@
+.registry {
+  .hero {
+    // background: var(--sec-color) url("../../assets/aroun-tiffany6.jpeg") top
+    //   center no-repeat;
+    // background-blend-mode: soft-light;
+    // background-size: cover;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-attachment: fixed;
+    // height: 100vh;
+    height: 100vh;
+    // overflow: hidden;
+
+    // margin: 0 auto;
+    background: var(--main-color) url("../../assets/aroun-tiffany10.jpeg")
+      center center no-repeat;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    padding: 2em 2em;
+  }
+}

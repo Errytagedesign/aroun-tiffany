@@ -6,7 +6,7 @@ import Gallery from "../../components/Gallery/Gallery";
 
 function OurStory() {
   return (
-    <main data-aos="zoom-out" className="our-story ">
+    <main className="our-story ">
       <section className="hero d-flex flex-column justify-content-center align-items-center  ">
         <div
           data-aos="flip-left"
@@ -22,7 +22,7 @@ function OurStory() {
           <h2
             data-aos="fade-in"
             data-aos-duration="2000"
-            className="title mt-5 mb-5"
+            className="title mt-5 mb-5 name"
           >
             Aroun <br /> & <br />
             Tiffany
