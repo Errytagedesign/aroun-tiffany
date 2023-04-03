@@ -44,6 +44,41 @@ function Venue() {
           <Button className="main-btn"> View Map </Button>{" "}
         </div>
       </section>
+      <section className="warm">
+        <div className="title-container">
+          {/* <h2 className="title"> August 1st, 2023</h2> */}
+
+          <svg width="100%" height="100%">
+            <text x="50%" y="60%" text-anchor="middle" className="title">
+              Stay Warm
+            </text>
+          </svg>
+        </div>
+      </section>
+      <section className="warm-hotel d-flex flex-column justify-content-center align-items-center">
+        <h4 className="mb-5"> Accommodations</h4>
+
+        <div className="d-flex flex-row justify-content-between col-12 col-md-8">
+          <div className="col-12 col-md-6">
+            <p>
+              Holiday Inn Express & Suites, <br />
+              Texas City, <br />
+              an IHG Hotel
+            </p>{" "}
+            <Button className="main-btn"> View Map </Button>{" "}
+          </div>
+          <div className="col-12 col-md-6">
+            <p>
+              {" "}
+              Fifth Season Inn
+              <br />
+              6801 I-40 Frontage Rd, Amarillo, <br />
+              TX 79106, United States
+            </p>{" "}
+            <Button className="main-btn"> View Map </Button>{" "}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

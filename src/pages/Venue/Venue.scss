@@ -124,9 +124,64 @@
       }
     }
   }
+  .warm {
+    height: 90vh;
 
+    background: url("../../assets/webp/Story021.webp") center center no-repeat;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    // The background-attachment fixed is zooming in on the background image on iphones, this is a fix.
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      background-attachment: scroll;
+    }
+
+    .title-container {
+      //   padding: 6em 0em;
+      display: grid;
+      place-items: center;
+      background: rgba(211, 211, 211, 0.25);
+
+      // backdrop-filter: blur(3px);
+
+      height: inherit;
+
+      svg {
+        filter: drop-shadow(4px 2px 1px #000000);
+
+        text {
+          color: var(--sec-color);
+          font-size: 9rem;
+          stroke: var(--sec-color);
+          stroke-width: 3;
+          animation: textAnimate 5s infinite alternate;
+
+          @keyframes textAnimate {
+            0% {
+              stroke-dasharray: 0 50%;
+              stroke-dashoffset: 20%;
+              fill: var(--main-color);
+            }
+
+            100% {
+              stroke-dasharray: 50% 0;
+              stroke-dashoffstet: -20%;
+              fill: hsla(189, 68%, 75%, 0%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .warm-hotel,
   .hotel {
-    padding: 3em 5em;
+    // padding: 3em 5em;
+    background: var(--sec-color);
     height: 60vh;
     // display: grid;
     // place-items: center;
