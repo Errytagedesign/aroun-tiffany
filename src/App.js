@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/footer";
 import Navbar from "./components/navbar/Navbar";
 import "aos/dist/aos.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import OurStory from "./pages/Home/OurStory";
 import Spinner from "./components/spinner/Spinner";
 import Venue from "./pages/Venue/Venue";
@@ -30,7 +32,9 @@ function App() {
   ) : (
     <div className="App">
       <Router>
-        <Navbar />
+        <header>
+          <Navbar />
+        </header>
         <Routes>
           <Route path="/" element={<OurStory />} />
           <Route path="/venue" element={<Venue />} />

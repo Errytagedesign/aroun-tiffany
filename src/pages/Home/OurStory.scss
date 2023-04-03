@@ -2,17 +2,18 @@
   .hero {
     height: 100vh;
     overflow: hidden;
-
+    position: relative;
     // margin: 0 auto;
-    background: var(--main-color) url("../../assets/aroun-tiffany10.jpeg")
-      center center no-repeat;
-    background-blend-mode: soft-light;
+    background: url("../../assets/webp/2togetheras2.webp") center center
+      no-repeat;
+    // background-blend-mode: soft-light;
     background-size: cover;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 
+    // The background-attachment fixed is zooming in on the background image on iphones, this is a fix.
     @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
       background-attachment: scroll;
     }
@@ -24,6 +25,46 @@
       letter-spacing: 10px;
       color: var(--sec-color);
     }
+
+    // .name {
+    //   position: absolute;
+    //   top: 25%;
+    //   left: 0;
+    //   right: 0;
+    //   font-size: 7rem;
+    //   line-height: 110px;
+    //   letter-spacing: 10px;
+    //   color: var(--sec-color);
+    //   z-index: 1;
+    // }
+
+    // svg {
+    //   overflow: visible;
+    //   text {
+    //     // line-height: 90px;
+    //     text-shadow: 1px 1px 1px 1px black;
+    //     letter-spacing: 10px;
+    //     color: var(--sec-color);
+    //     font-size: 6rem;
+    //     stroke: #ffa5d8;
+    //     stroke-width: 3;
+    //     // animation: textAnimate 5s infinite alternate;
+
+    //     @keyframes textAnimate {
+    //       0% {
+    //         stroke-dasharray: 0 50%;
+    //         stroke-dashoffset: 20%;
+    //         fill: hsla(189, 68%, 75%, 0%);
+    //       }
+
+    //       100% {
+    //         stroke-dasharray: 50% 0;
+    //         stroke-dashoffstet: -20%;
+    //         fill: hsla(189, 68%, 75%, 0%);
+    //       }
+    //     }
+    //   }
+    // }
 
     h3 {
       position: relative;
@@ -78,6 +119,44 @@
     }
   }
 
+  .home-containers {
+    // margin: 100px auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    // img {
+    //   // object-fit: cover;
+    //   // object-position: center;
+    //   z-index: 5;
+    // }
+
+    // .slick-next:before,
+    // .slick-prev:before {
+    //   // display: none;
+    // }
+    @media screen and (max-width: 600px) {
+      height: auto;
+    }
+  }
+  .slick-prev,
+  .slick-next {
+    top: 20%;
+    z-index: 1000;
+    color: var(--sec-color);
+    @media screen and (max-width: 900px) {
+      top: 40%;
+    }
+    // background-color: red;
+  }
+
+  .slick-prev {
+    left: 20px;
+  }
+  .slick-next {
+    right: 20px;
+  }
+
   .story-time {
     // background: var(--medGrey) url("../../assets/aroun-tiffany8.jpeg") center
     //   center no-repeat;
@@ -90,7 +169,21 @@
     background-color: var(--main-color);
 
     .story {
-      background-color: var(--white);
+      // background-color: var(--white);
+      padding: 5em 0em;
+      position: relative;
+
+      background: url("../../assets/webp/Story030.webp") top center no-repeat;
+      // background-blend-mode: soft-light;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-attachment: fixed;
+      // The background-attachment fixed is zooming in on the background image on iphones, this is a fix.
+      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+        background-attachment: scroll;
+      }
     }
 
     .storyInfo,
@@ -102,7 +195,7 @@
     }
 
     h2 {
-      color: var(--main-color);
+      color: var(--sec-color);
       font-size: 4rem;
     }
 
@@ -127,22 +220,80 @@
     padding: 5em 0em;
     position: relative;
 
-    background: var(--sec-color) url("../../assets/aroun-tiffany6.jpeg") top
-      center no-repeat;
-    background-blend-mode: soft-light;
+    background: url("../../assets/webp/2togetheras7.webp") top center no-repeat;
+    // background-blend-mode: soft-light;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-attachment: fixed;
+    // The background-attachment fixed is zooming in on the background image on iphones, this is a fix.
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      background-attachment: scroll;
+    }
     // color: var(--white);
     // div {
     //   // margin: 2em auto;
     //   height: 300px;
     // }
     h2 {
-      color: var(--main-color);
+      color: var(--sec-color);
       font-size: 4rem;
+    }
+  }
+
+  .propose {
+    // background-color: var(--white);
+    padding: 5em 0em;
+    position: relative;
+    height: 50vh;
+
+    background: url("../../assets/webp/Story014.webp") top center no-repeat;
+    // background-blend-mode: soft-light;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    // The background-attachment fixed is zooming in on the background image on iphones, this is a fix.
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      background-attachment: scroll;
+    }
+    h2 {
+      color: var(--sec-color);
+      font-size: 4rem;
+    }
+  }
+  .yes {
+    // background-color: var(--white);
+    padding: 5em 0em;
+    position: relative;
+    height: 50vh;
+
+    background: url("../../assets/webp/Story016.webp") top center no-repeat;
+    // background-blend-mode: soft-light;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    // The background-attachment fixed is zooming in on the background image on iphones, this is a fix.
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      background-attachment: scroll;
+    }
+    h2 {
+      color: var(--sec-color);
+      font-size: 4rem;
+    }
+  }
+
+  .best,
+  .story,
+  .propose,
+  .yes {
+    height: 60vh;
+    @media screen and (max-width: 900px) {
+      height: 50vh;
     }
   }
 }

@@ -8,7 +8,7 @@ import { BiMenu } from "react-icons/bi";
 // Styles
 import "./Navbar.scss";
 // Images
-import BrandLogo from "../../assets/aroun-tiffany-main-logo.png";
+import BrandLogo from "../../assets/aroun-tiffany-logo.png";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -17,6 +17,13 @@ function Navbar() {
     setNavbar(!navbar);
     console.log("clicked");
   };
+
+  const NavLinks = [
+    { id: 1, name: "Our Story", url: "/" },
+    { id: 2, name: "When and Where", url: "/venue" },
+    { id: 3, name: "Registry", url: "registry" },
+    { id: 4, name: "RSVP", url: "/rsvp" },
+  ];
 
   return (
     <main className="navbar">
@@ -40,27 +47,24 @@ function Navbar() {
           {/* Mobile Logo and Close menu icon */}
 
           {/* Nav Items */}
+
           <section className="d-flex nav-items flex-column flex-lg-row justify-content-between col-12  p-2 ">
-            <Link onClick={ShowNavbar} to="/">
-              <h3 className="navItems ">Our Story</h3>
-            </Link>
-            <Link onClick={ShowNavbar} to="/venue">
-              <h3 className="navItems ">When and Where</h3>
-            </Link>
-            <Link onClick={ShowNavbar} to="/registry">
-              <h3 className="navItems ">Registry </h3>
-            </Link>
-            <Link onClick={ShowNavbar} to="/rsvp">
-              <h3 className="navItems ">RSVP </h3>
-            </Link>
+            {NavLinks.map(({ id, name, url }) => (
+              <section className="d-flex justify-content-between p-2 " key={id}>
+                <NavLink
+                  className={({ isActive }) => (isActive ? "NavActive" : "")}
+                  onClick={ShowNavbar}
+                  to={url}
+                >
+                  <h3 className="navItems ">{name}</h3>
+                </NavLink>
+              </section>
+            ))}
           </section>
         </NavLink>
         <div className="menuIcon">
           {!navbar ? (
-            <BiMenu
-              color={`${!navbar ? "var(--main-color)" : "var(--sec-color)"} `}
-              onClick={ShowNavbar}
-            />
+            <BiMenu color="var(--sec-color)" onClick={ShowNavbar} />
           ) : (
             <BsXLg color="var(--sec-color)" onClick={ShowNavbar} />
           )}

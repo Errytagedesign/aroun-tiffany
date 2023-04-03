@@ -1,9 +1,58 @@
 import React from "react";
 import "./OurStory.scss";
+import Slider from "react-slick";
 
 import logo from "../../assets/aroun-tiffany-logo.png";
 import Gallery from "../../components/Gallery/Gallery";
 
+import pic1 from "../../assets/webp/2togetheras1.webp";
+// import pic2 from "../../assets/webp/2togetheras2.webp";
+import pic3 from "../../assets/webp/2togetheras3.webp";
+import pic4 from "../../assets/webp/2togetheras4.webp";
+import pic5 from "../../assets/webp/2togetheras5.webp";
+import pic6 from "../../assets/webp/2togetheras6.webp";
+import pic7 from "../../assets/webp/2togetheras7.webp";
+import pic8 from "../../assets/webp/2togetheras18.webp";
+
+const settings = {
+  dots: false,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+
+  // responsive: [
+  //   {
+  //     breakpoint: 1024,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1,
+  //       infinite: true,
+  //       dots: true,
+  //     },
+  //   },
+  //   {
+  //     breakpoint: 600,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1,
+  //       initialSlide: 1,
+  //     },
+  //   },
+  // ],
+};
+
+const nftCardsImages = [
+  { imageUrl: pic1 },
+  // { imageUrl: pic2 },
+  { imageUrl: pic3 },
+  { imageUrl: pic4 },
+  { imageUrl: pic5 },
+  { imageUrl: pic6 },
+  { imageUrl: pic7 },
+  { imageUrl: pic8 },
+];
 function OurStory() {
   return (
     <main className="our-story ">
@@ -19,6 +68,45 @@ function OurStory() {
         <article className="mt-5 col-12">
           <h3 data-aos="fade-left"> 08 - 01- 2023 </h3>
 
+          {/* <div className="mt-5">
+            <svg width="100%">
+              <text
+                x="50%"
+                y="40%"
+                text-anchor="middle"
+                fill="red"
+                className="title"
+              >
+                Aroun
+              </text>
+            </svg>
+            <br />
+            <svg>
+              <text
+                x="50%"
+                y="10%"
+                text-anchor="middle"
+                fill="red"
+                className="title"
+              >
+                &
+              </text>
+            </svg>
+            <br />
+
+            <svg>
+              <text
+                x="50%"
+                y="0%"
+                text-anchor="middle"
+                fill="red"
+                className="title"
+              >
+                Tiffany
+              </text>
+            </svg>
+          </div> */}
+
           <h2
             data-aos="fade-in"
             data-aos-duration="2000"
@@ -32,6 +120,19 @@ function OurStory() {
             Are getting garried{" "}
           </h3>
         </article>
+      </section>
+
+      {/* Start Web slider section  */}
+      <section className="slider home-containers">
+        <Slider className="col-12" {...settings}>
+          {nftCardsImages.map(({ imageUrl }) => (
+            <img
+              className="col-12"
+              src={imageUrl}
+              alt="wolfpackherd nft cards"
+            />
+          ))}
+        </Slider>
       </section>
 
       <section className="story-time ">
@@ -75,9 +176,20 @@ function OurStory() {
         </div>
       </section>
 
-      <aside data-aos="fade-in col-12">
+      <aside>
         <Gallery />
       </aside>
+
+      <section className="propose d-flex flex-column justify-content-between align-content-center">
+        <div>
+          <h2 className="title ">He Proposed</h2>
+        </div>
+      </section>
+      <section className="yes d-flex flex-column justify-content-between align-content-center">
+        <div>
+          <h2 className="title ">She Said Yes</h2>
+        </div>
+      </section>
     </main>
   );
 }
