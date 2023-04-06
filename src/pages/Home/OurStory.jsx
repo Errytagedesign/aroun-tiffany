@@ -136,7 +136,7 @@ function OurStory() {
       </section>
 
       <section className="story-time ">
-        <div className="story">
+        <div className="story d-flex justify-content-center align-items-center">
           <h2
             data-aos="fade-in"
             data-aos-duration="2000"
@@ -168,7 +168,7 @@ function OurStory() {
           </p>
         </div>
       </section>
-      <section className="best d-flex flex-column justify-content-between align-content-center">
+      <section className="best d-flex flex-column justify-content-center align-items-center">
         <div className="text">
           <h2 data-aos="fade-in" className="title ">
             Best Friend
@@ -180,12 +180,12 @@ function OurStory() {
         <Gallery />
       </aside>
 
-      <section className="propose d-flex flex-column justify-content-between align-content-center">
+      <section className="propose d-flex flex-column justify-content-center align-items-center">
         <div>
           <h2 className="title ">He Proposed</h2>
         </div>
       </section>
-      <section className="yes d-flex flex-column justify-content-between align-content-center">
+      <section className="yes d-flex flex-column justify-content-center align-items-center">
         <div>
           <h2 className="title ">She Said Yes</h2>
         </div>

@@ -9,6 +9,11 @@ header {
   bottom: 0;
   z-index: 4;
   width: 100%;
+  background: rgba(10, 10, 10, 0.7);
+  height: fit-content;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
 }
 
 :root {

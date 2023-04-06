@@ -291,9 +291,13 @@
   .story,
   .propose,
   .yes {
-    height: 60vh;
-    @media screen and (max-width: 900px) {
-      height: 50vh;
+    height: 100vh;
+
+    h2 {
+      text-shadow: 4px 2px 1px #000000;
     }
+    // @media screen and (max-width: 900px) {
+    //   height: 50vh;
+    // }
   }
 }

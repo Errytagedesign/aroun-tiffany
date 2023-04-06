@@ -58,8 +58,8 @@ function Venue() {
       <section className="warm-hotel d-flex flex-column justify-content-center align-items-center">
         <h4 className="mb-5"> Accommodations</h4>
 
-        <div className="d-flex flex-row justify-content-between col-12 col-md-8">
-          <div className="col-12 col-md-6">
+        <div className="d-flex flex-column flex-md-row justify-content-between col-12 col-md-8">
+          <div className="col-12 col-md-6 mt-5 mt-md-0">
             <p>
               Holiday Inn Express & Suites, <br />
               Texas City, <br />
@@ -67,7 +67,7 @@ function Venue() {
             </p>{" "}
             <Button className="main-btn"> View Map </Button>{" "}
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6  mt-5 mt-md-0">
             <p>
               {" "}
               Fifth Season Inn
