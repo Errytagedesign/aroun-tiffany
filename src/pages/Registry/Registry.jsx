@@ -33,7 +33,7 @@ function Registry() {
           <a
             href="https://www.amazon.com/s?k=wedding+gifts&crid=2YN08HPQXEPHT&sprefix=wedding+%2Caps%2C388&ref=nb_sb_ss_ts-doa-p_2_8"
             target="_blank"
-            className="col-12 col-md-2 shopping"
+            className="col-12 col-md-4 col-lg-2 shopping"
             rel="noreferrer"
           >
             <AiOutlineAmazon className="icons" />
@@ -41,7 +41,7 @@ function Registry() {
           <a
             href="https://www.ebay.com/b/Home-Garden/11700/bn_1853126"
             target="_blank"
-            className="col-12 col-md-2 shopping"
+            className="col-12 col-md-4 col-lg-2 shopping"
             rel="noreferrer"
           >
             <FaEbay className="icons" />
@@ -49,7 +49,7 @@ function Registry() {
           <a
             href="https://www.walmart.com/"
             target="_blank"
-            className="col-12 col-md-2 shopping"
+            className="col-12 col-md-4 col-lg-2 shopping"
             rel="noreferrer"
           >
             <SiWalmart className="icons" />
@@ -57,7 +57,7 @@ function Registry() {
           <a
             href="https://www.aliexpress.com/category/1511/watches.html?spm=a2g0o.home.106.2.650c2145dMqL7I&isCates=y"
             target="_blank"
-            className="col-12 col-md-2 shopping"
+            className="col-12 col-md-4 col-lg-2 shopping"
             rel="noreferrer"
           >
             <SiAliexpress className="icons" />
