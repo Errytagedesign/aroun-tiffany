@@ -1,0 +1,70 @@
+.rsvp {
+  background-color: var(--sec-color);
+
+  .hero {
+    // background: var(--sec-color) url("../../assets/aroun-tiffany6.jpeg") top
+    //   center no-repeat;
+    // background-blend-mode: soft-light;
+    // background-size: cover;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-attachment: fixed;
+    // height: 100vh;
+    height: 90vh;
+    // overflow: hidden;
+
+    // margin: 0 auto;
+    background: url("../../assets/webp/Story018.webp") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    // The background-attachment fixed is zooming in on the background image on iphones, this is a fix.
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      background-attachment: scroll;
+    }
+
+    .title-container {
+      height: inherit;
+      svg {
+        filter: drop-shadow(4px 2px 1px #000000);
+        text {
+          color: var(--sec-color);
+          font-size: 9rem;
+          stroke: var(--sec-color);
+          stroke-width: 3;
+          animation: textAnimate 5s infinite alternate;
+
+          @media screen and (max-width: 900px) {
+            font-size: 5rem;
+            stroke-width: 2;
+          }
+          // @media screen and (max-width: 500px) {
+          //   font-size: 2rem;
+          //   stroke-width: 1;
+          // }
+
+          @keyframes textAnimate {
+            0% {
+              stroke-dasharray: 0 50%;
+              stroke-dashoffset: 20%;
+              fill: var(--main-color);
+            }
+
+            100% {
+              stroke-dasharray: 50% 0;
+              stroke-dashoffstet: -20%;
+              fill: hsla(189, 68%, 75%, 0%);
+            }
+          }
+        }
+      }
+    }
+  }
+  .form {
+    padding: 7em 0;
+  }
+}

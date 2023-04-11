@@ -92,7 +92,7 @@ a {
 
 .main-btn:hover {
   transform: scale(1.1);
-  background-color: var(--sec-color);
+  /* background-color: var(--sec-color); */
 }
 
 /* ===General Image Animation=== */
