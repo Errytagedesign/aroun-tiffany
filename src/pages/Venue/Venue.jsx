@@ -72,16 +72,14 @@ function Venue() {
               />
             </div>
             <h6>900 Packer Ave., Philadelphia, PA 19148 </h6>{" "}
-            <Button className="main-btn col-12 mt-2">
+            <a
+              href="https://philadelphia-reservations.livecasinohotel.com/ibe/details.aspx?propertyid=16611&nights=1&checkin=11/9/2023&group=5552390&lang=en-us"
+              target="_blank"
+              rel="noreferrer"
+            >
               {" "}
-              <a
-                href="https://philadelphia-reservations.livecasinohotel.com/ibe/details.aspx?propertyid=16611&nights=1&checkin=11/9/2023&group=5552390&lang=en-us"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View{" "}
-              </a>{" "}
-            </Button>{" "}
+              <Button className="main-btn col-12 mt-2">View </Button>{" "}
+            </a>{" "}
           </div>
         </div>
       </section>
