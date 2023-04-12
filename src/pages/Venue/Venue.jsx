@@ -15,7 +15,7 @@ function Venue() {
 
           <svg width="100%" height="100%">
             <text x="50%" y="60%" text-anchor="middle" className="title">
-              August 1st, 2023
+              November 11th, 2023
             </text>
           </svg>
         </div>
@@ -26,7 +26,7 @@ function Venue() {
 
           <svg width="100%" height="100%">
             <text x="50%" y="60%" text-anchor="middle" className="title">
-              Texas
+              Philadelphia
             </text>
           </svg>
         </div>
@@ -56,26 +56,32 @@ function Venue() {
         </div>
       </section>
       <section className="warm-hotel d-flex flex-column justify-content-center align-items-center">
-        <h4 className="mb-5"> Accommodations</h4>
-
-        <div className="d-flex flex-column flex-md-row justify-content-between col-12 col-md-8">
-          <div className="col-12 col-md-6 mt-5 mt-md-0">
-            <p>
-              Holiday Inn Express & Suites, <br />
-              Texas City, <br />
-              an IHG Hotel
-            </p>{" "}
-            <Button className="main-btn"> View Map </Button>{" "}
-          </div>
-          <div className="col-12 col-md-6  mt-5 mt-md-0">
-            <p>
+        <h3 className="mb-2"> Accommodations</h3>
+        <p>
+          Just mention Adeniran Kamara Wedding <br />
+          for Booking 2 nights
+        </p>{" "}
+        <div className="d-flex justify-content-center align-items-center col-12 col-md-8 mt-3">
+          <div className="col-8 col-md-12 col-md-6 mt-5 mt-md-0">
+            <div className="col-12">
+              <h5 className="">Live Casino & Hotel, Philadelphia </h5>{" "}
+              <img
+                className="col-12 mb-3"
+                src="https://cdn.shrglobal.com/CrsMedia//P16611/grp/LCHP.PNG"
+                alt=""
+              />
+            </div>
+            <h6>900 Packer Ave., Philadelphia, PA 19148 </h6>{" "}
+            <Button className="main-btn col-12 mt-2">
               {" "}
-              Fifth Season Inn
-              <br />
-              6801 I-40 Frontage Rd, Amarillo, <br />
-              TX 79106, United States
-            </p>{" "}
-            <Button className="main-btn"> View Map </Button>{" "}
+              <a
+                href="https://philadelphia-reservations.livecasinohotel.com/ibe/details.aspx?propertyid=16611&nights=1&checkin=11/9/2023&group=5552390&lang=en-us"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View{" "}
+              </a>{" "}
+            </Button>{" "}
           </div>
         </div>
       </section>

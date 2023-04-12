@@ -61,15 +61,15 @@ function Rsvp() {
             </Col>
           </Row>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Are you attending? *</Form.Label>
+            <Form.Label>Are you attending? </Form.Label>
             <Form.Control required as="textarea" rows={3} />{" "}
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Who else is coming with you? *</Form.Label>
+            <Form.Label>Who else is coming with you? </Form.Label>
             <Form.Control required as="textarea" rows={3} />{" "}
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Message *</Form.Label>
+            <Form.Label>Message </Form.Label>
             <Form.Control required as="textarea" rows={3} />{" "}
           </Form.Group>
 

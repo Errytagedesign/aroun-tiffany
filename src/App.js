@@ -10,6 +10,7 @@ import Spinner from "./components/spinner/Spinner";
 import Venue from "./pages/Venue/Venue";
 import Registry from "./pages/Registry/Registry";
 import Rsvp from "./pages/RSVP/Rsvp";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -40,6 +41,7 @@ function App() {
           <Route path="/venue" element={<Venue />} />
           <Route path="/registry" element={<Registry />} />
           <Route path="/rsvp" element={<Rsvp />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>

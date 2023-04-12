@@ -23,6 +23,7 @@ function Navbar() {
     { id: 2, name: "When and Where", url: "/venue" },
     { id: 3, name: "Registry", url: "registry" },
     { id: 4, name: "RSVP", url: "/rsvp" },
+    { id: 4, name: "Contact us", url: "/contact" },
   ];
 
   return (

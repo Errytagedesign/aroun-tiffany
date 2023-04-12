@@ -66,46 +66,7 @@ function OurStory() {
         </div>
 
         <article className="mt-5 col-12">
-          <h3 data-aos="fade-left"> 08 - 01- 2023 </h3>
-
-          {/* <div className="mt-5">
-            <svg width="100%">
-              <text
-                x="50%"
-                y="40%"
-                text-anchor="middle"
-                fill="red"
-                className="title"
-              >
-                Aroun
-              </text>
-            </svg>
-            <br />
-            <svg>
-              <text
-                x="50%"
-                y="10%"
-                text-anchor="middle"
-                fill="red"
-                className="title"
-              >
-                &
-              </text>
-            </svg>
-            <br />
-
-            <svg>
-              <text
-                x="50%"
-                y="0%"
-                text-anchor="middle"
-                fill="red"
-                className="title"
-              >
-                Tiffany
-              </text>
-            </svg>
-          </div> */}
+          <h3 data-aos="fade-left"> 11 - 10- 2023 </h3>
 
           <h2
             data-aos="fade-in"
@@ -117,7 +78,7 @@ function OurStory() {
           </h2>
           <h3 data-aos="fade-in" className="title">
             {" "}
-            Are getting garried{" "}
+            Are getting married{" "}
           </h3>
         </article>
       </section>
