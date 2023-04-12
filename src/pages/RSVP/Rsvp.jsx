@@ -28,6 +28,10 @@ function Rsvp() {
         </div>
       </section>
       <section className="form col-8 text-start">
+        <div className="text-center mb-4">
+          <h2> We're so excited to celebrate with you!</h2>
+          <h3> Kindly respond by 9/9/2023</h3>
+        </div>
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
