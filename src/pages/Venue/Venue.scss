@@ -208,6 +208,35 @@
     // display: grid;
     // place-items: center;
   }
+
+  .festives {
+    border: solid 2px var(--main-color);
+    border-radius: 6px;
+    padding: 1em;
+    background-color: #fff;
+    text-align: start;
+
+    @media screen and (max-width: 700px) {
+      margin-bottom: 1em;
+    }
+
+    h6 {
+      padding: 0.5em;
+      .icon {
+        color: lightgray;
+        margin-right: 0.3em;
+      }
+    }
+    h3 {
+      // background: var(--main-color);
+      // border-radius: 6px;
+      padding: 0.5em 0;
+      text-align: center;
+
+      // color: #fff;
+      border-bottom: solid 2px lightgray;
+    }
+  }
   // .warm-hotel {
   //   padding: 5em 0em;
   // }
