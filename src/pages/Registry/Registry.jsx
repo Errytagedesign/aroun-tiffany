@@ -1,8 +1,8 @@
 import React from "react";
 import "./Registry.scss";
 import { AiOutlineAmazon } from "react-icons/ai";
-import { FaEbay } from "react-icons/fa";
-import { SiWalmart, SiAliexpress } from "react-icons/si";
+// import { FaEbay } from "react-icons/fa";
+// import { SiWalmart, SiAliexpress } from "react-icons/si";
 
 function Registry() {
   return (
@@ -31,44 +31,14 @@ function Registry() {
 
         <div className="d-flex flex-wrap justify-content-around mt-5 mb-5">
           <a
-            href="https://www.amazon.com/s?k=wedding+gifts&crid=2YN08HPQXEPHT&sprefix=wedding+%2Caps%2C388&ref=nb_sb_ss_ts-doa-p_2_8"
+            href="https://www.amazon.com/wedding/tiffany-kamara-aroun-kamara--november-2023/registry/AF8AINR7CB2T"
             target="_blank"
-            className="col-12 col-md-4 col-lg-2 shopping"
+            className="col-12 col-md-7 shopping"
             rel="noreferrer"
           >
             <AiOutlineAmazon className="icons" />
           </a>
-          <a
-            href="https://www.ebay.com/b/Home-Garden/11700/bn_1853126"
-            target="_blank"
-            className="col-12 col-md-4 col-lg-2 shopping"
-            rel="noreferrer"
-          >
-            <FaEbay className="icons" />
-          </a>
-          <a
-            href="https://www.walmart.com/"
-            target="_blank"
-            className="col-12 col-md-4 col-lg-2 shopping"
-            rel="noreferrer"
-          >
-            <SiWalmart className="icons" />
-          </a>
-          <a
-            href="https://www.aliexpress.com/category/1511/watches.html?spm=a2g0o.home.106.2.650c2145dMqL7I&isCates=y"
-            target="_blank"
-            className="col-12 col-md-4 col-lg-2 shopping"
-            rel="noreferrer"
-          >
-            <SiAliexpress className="icons" />
-          </a>
         </div>
-
-        <small>
-          {" "}
-          Please send any gifts to our home in Chicago, as we will not be able
-          to bring them with us from San Diego.
-        </small>
       </section>
     </div>
   );

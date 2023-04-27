@@ -11,6 +11,7 @@ import Venue from "./pages/Venue/Venue";
 import Registry from "./pages/Registry/Registry";
 import Rsvp from "./pages/RSVP/Rsvp";
 import Contact from "./pages/Contact/Contact";
+import ThankYou from "./pages/ThankYou/ThankYou";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -42,6 +43,7 @@ function App() {
           <Route path="/registry" element={<Registry />} />
           <Route path="/rsvp" element={<Rsvp />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/thankyou" element={<ThankYou />} />
         </Routes>
         <Footer />
       </Router>

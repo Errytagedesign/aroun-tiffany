@@ -65,7 +65,7 @@ function Contact() {
         </h3>
         <aside className="d-flex flex-column flex-md-row maids col-8 mt-5 flex-row justify-content-between">
           <div className="main-btn d-flex flex-column mb-3 mb-md-0 col-12 col-md-5 d-flex justify-content-center align-items-center">
-            <h4> Lead Bridesmaid:</h4>
+            <h4> Bridesmaid:</h4>
             <h3> Farah Khan </h3>{" "}
             <div>
               <a className="call" href="tel:2672549967 ">
@@ -82,7 +82,7 @@ function Contact() {
             </div>
           </div>
           <div className="main-btn d-flex flex-column col-12 col-md-5 d-flex justify-content-center align-items-center ">
-            <h4> Lead Groomsmen:</h4>
+            <h4> Groomsmen:</h4>
             <h3> Destin Adeniran </h3>{" "}
             <div>
               <a className="call" href="tel:4848686377 ">

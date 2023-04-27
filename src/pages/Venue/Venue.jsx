@@ -46,7 +46,7 @@ function Venue() {
             <h6>
               {" "}
               <BiTimeFive className="icon" />
-              8:00 AM - 10:00 PM
+              4:30 PM - 9:30 PM
             </h6>
             <h6>
               {" "}
