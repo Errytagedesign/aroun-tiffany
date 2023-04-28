@@ -1,6 +1,6 @@
 .our-story {
   .hero {
-    height: 100vh;
+    // height: 100vh;
     overflow: hidden;
     position: relative;
     // margin: 0 auto;
@@ -18,53 +18,20 @@
       background-attachment: scroll;
     }
 
-    padding: 2em 2em;
+    @media screen and (max-width: 900px) {
+      height: 100vh;
+    }
+    @media screen and (max-width: 320px) {
+      height: max-content;
+    }
+
+    padding: 7em 2em;
     h2 {
       font-size: 7rem;
       line-height: 90px;
       letter-spacing: 10px;
       color: var(--sec-color);
     }
-
-    // .name {
-    //   position: absolute;
-    //   top: 25%;
-    //   left: 0;
-    //   right: 0;
-    //   font-size: 7rem;
-    //   line-height: 110px;
-    //   letter-spacing: 10px;
-    //   color: var(--sec-color);
-    //   z-index: 1;
-    // }
-
-    // svg {
-    //   overflow: visible;
-    //   text {
-    //     // line-height: 90px;
-    //     text-shadow: 1px 1px 1px 1px black;
-    //     letter-spacing: 10px;
-    //     color: var(--sec-color);
-    //     font-size: 6rem;
-    //     stroke: #ffa5d8;
-    //     stroke-width: 3;
-    //     // animation: textAnimate 5s infinite alternate;
-
-    //     @keyframes textAnimate {
-    //       0% {
-    //         stroke-dasharray: 0 50%;
-    //         stroke-dashoffset: 20%;
-    //         fill: hsla(189, 68%, 75%, 0%);
-    //       }
-
-    //       100% {
-    //         stroke-dasharray: 50% 0;
-    //         stroke-dashoffstet: -20%;
-    //         fill: hsla(189, 68%, 75%, 0%);
-    //       }
-    //     }
-    //   }
-    // }
 
     h3 {
       position: relative;
