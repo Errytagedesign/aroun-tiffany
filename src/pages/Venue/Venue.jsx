@@ -18,7 +18,7 @@ function Venue() {
 
           <svg width="100%" height="100%">
             <text x="50%" y="60%" text-anchor="middle" className="title">
-              November 11th, 2023
+              November 10th, 2023
             </text>
           </svg>
         </div>
