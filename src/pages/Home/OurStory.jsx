@@ -124,7 +124,7 @@ function OurStory() {
             <br /> <br />
             On the afternoon of a beautiful day her hair color was my favorite
             color, blue. I could not for once resist her beautiful signature
-            smile. When I attempted to talk to “Uncle Alfred” our mutual
+            smile. When I attempted to talk to her “Uncle Alfred” our mutual
             co-worker stopped me and told me she was busy. Out of respect for
             her and what she was doing I continued to walk to my floor. A year
             went by I had not seen her due to switching from 2nd shift to third
