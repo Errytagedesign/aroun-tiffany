@@ -112,40 +112,40 @@ function OurStory() {
               className="title"
               style={{ background: "transparent", color: "var(--sec-color)" }}
             >
-              What God has joined together let no man put asunder
+              What God has joined together, let no man put asunder!{" "}
             </mark>
             <br /> <br />
             It was not an accident… it was destined to be. We thank Allah for a
-            union full of love, life, laughter and never ending happiness.
+            union full of love, life, laughter, and never-ending happiness.
             <br /> <br />
-            The Beginning: <br />
-            We worked at Nursing facility for a while without ever crossing
-            paths on our shifts.
+            The Beginning: We worked at a nursing facility for a while without
+            crossing paths on our shifts.
             <br /> <br />
-            On the afternoon of a beautiful day her hair color was my favorite
+            On the afternoon of a beautiful day, her hair color was my favorite
             color, blue. I could not for once resist her beautiful signature
-            smile. When I attempted to talk to her “Uncle Alfred” our mutual
+            smile. When I attempted to talk to her "Uncle Alfred," our mutual
             co-worker stopped me and told me she was busy. Out of respect for
-            her and what she was doing I continued to walk to my floor. A year
-            went by I had not seen her due to switching from 2nd shift to third
-            shift. <br /> <br />
-            Aroun worked on a floor that I heavily avoided. November 8, 2018 I
-            moved into my first apartment… and two days later my car went into
-            the shop. I had to pick up extra hours to make sure that I have the
-            money to move my car out of the shop quickly. My regular day shift
-            that I was scheduled to work on November 16 got canceled. The only
-            opening the organization had was for third shift on the floor I
-            normally would avoid, but I decided I would take it try something
-            that I don’t think I would like for a change. <br /> <br />
-            I couldn’t believe there she was again. By this time, I had assumed
-            perhaps she left working at the facility. Busy and focused in her
-            position on NOVEMBER 16, 2018 I approached the love of my life,
-            Tiffany thought that was our first encounter not remembering when I
+            her and what she was doing, I continued to walk to my floor. A year
+            went by I had not seen her due to switching from 2nd shift to the
+            third shift. <br /> <br />
+            Aroun worked on a floor that I heavily avoided. On November 8, 2018,
+            I moved into my first apartment… and my car went into the shop two
+            days later. I had to pick up extra hours to ensure I had the money
+            to move my car out of the shop quickly. The regular day shift I was
+            scheduled to work on November 16 was canceled. The organization's
+            only opening was for the third shift on the floor I normally would
+            avoid, but I decided to take it and try something I didn't think I
+            would like for a change.
+            <br /> <br />
+            I couldn't believe there she was again. By this time, I had assumed
+            that perhaps she left working at the facility. Busy and focused in
+            her position on NOVEMBER 16, 2018, I approached the love of my life;
+            Tiffany thought that was our first encounter, not remembering when I
             approached her over a year ago. I knew she was the one.
             <br /> <br />
             When Aroun approached me, I felt his aura, his gentleness, his love,
-            his power, his protection …. I knew he was a King, I knew he was the
-            one. <br /> <br />
+            his power, his protection …. I knew he was a King, and I knew he was
+            the one. <br /> <br />
             The rest is history… Mashallah
           </p>
         </div>
