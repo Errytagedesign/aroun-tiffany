@@ -26,7 +26,7 @@ function Rsvp() {
     // setLoading(true);
     Toast.fire({
       icon: "success",
-      title: "Signed in successfully",
+      title: "RSVP form submitted successfully",
     });
 
     window.location.replace("/");
