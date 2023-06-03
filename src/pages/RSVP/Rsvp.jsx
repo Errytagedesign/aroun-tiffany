@@ -1,19 +1,68 @@
-import React, { useState } from "react";
+import React from "react";
+import Swal from "sweetalert2";
+// import emailjs from "@emailjs/browser";
+import { useForm, ValidationError } from "@formspree/react";
 import "./Rsvp.scss";
 import { Button, Col, Form, Row } from "react-bootstrap";
 
 function Rsvp() {
-  const [validated, setValidated] = useState(false);
+  // const [validated, setValidated] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener("mouseenter", Swal.stopTimer);
+      toast.addEventListener("mouseleave", Swal.resumeTimer);
+    },
+  });
 
-    setValidated(true);
-  };
+  const [state, handleSubmit] = useForm("mwkjdloj");
+  if (state.succeeded) {
+    // setLoading(true);
+    Toast.fire({
+      icon: "success",
+      title: "Signed in successfully",
+    });
+
+    window.location.replace("/");
+  }
+
+  // const formRef = useRef();
+
+  // const sendFormToMail = (e) => {
+  //   e.preventDefault();
+  //   setLoading(true);
+  //   emailjs
+  //     .sendForm(
+  //       "service_j7wi6wh",
+  //       "template_yqswg2s",
+  //       formRef.current,
+  //       "fie-XkTKFC8Cgzfno"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // };
+
+  // const handleSubmit = (e) => {
+  //   const form = e.currentTarget;
+  //   if (form.checkValidity() === false) {
+  //     e.preventDefault();
+  //     e.stopPropagation();
+  //   }
+
+  //   setValidated(true);
+  // };
   return (
     <div className="rsvp d-flex flex-column justify-content-center align-items-center ">
       <section className="hero d-flex justify-content-center align-items-center col-12">
@@ -32,7 +81,12 @@ function Rsvp() {
           <h2> We're so excited to celebrate with you!</h2>
           <h3> Kindly respond by 9/9/2023</h3>
         </div>
-        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+        <Form
+          // ref={formRef}
+          // noValidate
+          // validated={validated}
+          onSubmit={handleSubmit}
+        >
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control
@@ -40,6 +94,11 @@ function Rsvp() {
               name="email"
               type="email"
               placeholder="Enter email"
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
             />
           </Form.Group>
 
@@ -50,8 +109,13 @@ function Rsvp() {
                 required
                 name="First Name"
                 type="text"
-                placeholder="First name"
+                placeholder="First Name"
                 className="mb-3"
+              />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
               />
             </Col>
             <Col>
@@ -59,25 +123,39 @@ function Rsvp() {
                 required
                 name="Last Name"
                 type="text"
-                placeholder="Last name"
+                placeholder="Last Name"
                 className="mb-3"
               />
             </Col>
           </Row>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Are you attending? </Form.Label>
-            <Form.Control required as="textarea" rows={3} />{" "}
+            <Form.Control
+              required
+              as="textarea"
+              name="Attending"
+              rows={3}
+            />{" "}
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Who else is coming with you? </Form.Label>
-            <Form.Control required as="textarea" rows={3} />{" "}
+            <Form.Control
+              required
+              as="textarea"
+              name="Coming With"
+              rows={3}
+            />{" "}
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Message </Form.Label>
-            <Form.Control required as="textarea" rows={3} />{" "}
+            <Form.Control required as="textarea" name="Message" rows={3} />{" "}
           </Form.Group>
 
-          <Button type="submit" className="col-12 main-btn mt-5">
+          <Button
+            type="submit"
+            className="col-12 main-btn mt-5"
+            disabled={state.submitting}
+          >
             Submit
           </Button>
         </Form>
