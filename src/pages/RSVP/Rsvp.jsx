@@ -129,10 +129,10 @@ function Rsvp() {
 
           <Form.Group className='mb-3' controlId='formBasicEmail'>
             <Form.Label>ENTREES </Form.Label>
-            <Form.Select aria-label='Default select example'>
+            <Form.Select name='Entrees' aria-label='Default select example'>
               <option>Select Entries</option>
 
-              <option value='an seared chicken Breast, Honey Apple Gastrique  '>
+              <option value='Pan seared chicken Breast, Honey Apple Gastrique  '>
                 Pan seared chicken Breast, Honey Apple Gastrique
               </option>
               <option value='Roasted Salmon, Orange Thyme Butter'>
@@ -145,7 +145,7 @@ function Rsvp() {
           </Form.Group>
           <Form.Group className='mb-3' controlId='formBasicEmail'>
             <Form.Label>SIDES </Form.Label>
-            <Form.Select aria-label='Default select example'>
+            <Form.Select name='Sides' aria-label='Default select example'>
               <option>Select Sides</option>
               <option value='Garlic Broccolini '>Garlic Broccolini</option>
               <option value='Tuscan Fingerling Potatoes'>
